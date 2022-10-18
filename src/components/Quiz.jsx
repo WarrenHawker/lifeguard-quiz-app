@@ -5,6 +5,8 @@ import Questions from './Questions';
 
 export default function Quiz(props) {
   const [questions, setQuestions] = useState()
+  const [pages, setPages] = useState()
+  console.log(pages)
   useEffect(() => {
     if(props.options.mode == 'mock') {
       setQuestions(questionsData)
@@ -28,6 +30,16 @@ export default function Quiz(props) {
       setQuestions(selectedQuestions)
     }    
   },[])
+
+  useEffect(() => {
+    if(questions) {
+      if(Math.ceil(questions.length/5) < 2) {
+        setPages(1)
+      } else {
+        setPages(Math.ceil(questions.length/5))
+      }
+    }
+  },[questions])
 
   function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
