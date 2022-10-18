@@ -1495,7 +1495,7 @@ export const questionsData = [
 		answers: [
 			{
 				id: '45a',
-				answer: 'Normalskin colour, normal pulse and feeling dizzy',
+				answer: 'Normal skin colour, normal pulse and feeling dizzy',
 				isCorrect: false,
 				isSelected: false,
 			},

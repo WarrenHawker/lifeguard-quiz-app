@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import {questionsData} from '../assets/data';
+import Questions from './Questions';
+
 
 export default function Quiz(props) {
   const [questions, setQuestions] = useState()
-  console.log(props.options)
   useEffect(() => {
     if(props.options.mode == 'mock') {
       setQuestions(questionsData)
@@ -24,7 +25,6 @@ export default function Quiz(props) {
             return question
           }
         })
-      console.log("selected questions: ", selectedQuestions)
       setQuestions(selectedQuestions)
     }    
   },[])
@@ -46,7 +46,13 @@ export default function Quiz(props) {
     return array;
   }
 
-  return (
-    <></>
-  )
+  if(questions) {
+    return (
+      <>
+        <Questions questions={questions}/>
+        <button>Check Answers</button>
+      </>
+    )
+  } else return <></>
+ 
 }
