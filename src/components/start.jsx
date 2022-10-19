@@ -63,7 +63,7 @@ export default function Start(props) {
             </> 
           : <></>
         }
-        <button>Start Quiz</button>
+        <button disabled={!mode ? true : false}>Start Quiz</button>
       </form>
     </section>
   )

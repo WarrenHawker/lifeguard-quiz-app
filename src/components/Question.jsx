@@ -39,7 +39,7 @@ export default function Question(props) {
 						}
 					} 
 					return (
-						<button style={style} onClick={props.selectAnswer} id={answer.id} key={answer.id}>{answer.answer}</button>
+						<button disabled={props.showCorrectAnswers ? true : false} style={style} onClick={props.selectAnswer} id={answer.id} key={answer.id}>{answer.answer}</button>
 					)
 				})
 			}
