@@ -12,7 +12,7 @@ export default function Quiz(props) {
 
   useEffect(() => {
     if(props.options.mode == 'mock') {
-      const selectedQuestions = questionsData.map((question, index) => {
+      const selectedQuestions = questionsData.filter(question => question.paper == props.options.paper).map((question, index) => {
         const pageNum = Math.ceil((index+1)/5)
 		      return ({...question, pageNum:pageNum})
       })

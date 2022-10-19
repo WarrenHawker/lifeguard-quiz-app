@@ -4,6 +4,7 @@ export default function Start(props) {
   const [mode, setMode] = useState()
   const [category, setCategory] = useState('random')
   const [questionsAmount, setQuestionsAmount] = useState(5)
+  const [paper, setPaper] = useState(1)
   const modeSelect = (e) => {
     setMode(e.target.value)
   }
@@ -16,12 +17,14 @@ export default function Start(props) {
         mode: 'quickfire',
         category: category,
         questionsAmount: questionsAmount,
+        paper: null,
       }
     } else {
       options = {
         mode: 'mock',
         category: null,
         questionsAmount: null,
+        paper: paper,
       }
     }
 
@@ -34,6 +37,10 @@ export default function Start(props) {
 
   const amountSelect = (e) => {
     setQuestionsAmount(e.target.value)
+  }
+
+  const paperSelect = (e) => {
+    setPaper(e.target.value)
   }
 
 
@@ -61,7 +68,15 @@ export default function Start(props) {
               <label htmlFor="questionsAmount">How many questions do you want to answer?</label>
               <input type="range" min="1" max="10" defaultValue="5" onChange={amountSelect}></input>              
             </> 
-          : <></>
+          : mode=='mock' ? 
+            <>
+              <label htmlFor="paper">Select mock paper</label>
+              <select name="paper" onChange={paperSelect}>
+                <option value="1">Paper 1</option>
+                <option value="2">Paper 2</option>
+              </select>
+            </>
+            : <></>
         }
         <button disabled={!mode ? true : false}>Start Quiz</button>
       </form>

@@ -1420,7 +1420,7 @@ export const questionsData = [
 		paper: 1,
 		category: 3,
 		pageRef: 200,
-		question: 'Identify what the blood from a severe external bleed islikely to look like',
+		question: 'Identify what the blood from a severe external bleed is likely to look like',
 		answers: [
 			{
 				id: '43a',
