@@ -14,9 +14,13 @@ export default function App() {
     setStartGame(true)
   }
 
+  const playAgain = () => {
+    setStartGame(false)
+  }
+
   return (
     <main>
-    {!startGame? <Start startFormHandler={startFormHandler}/> : <Quiz options={quizMode}/>}
+    {!startGame? <Start startFormHandler={startFormHandler}/> : <Quiz playAgain={playAgain} options={quizMode}/>}
     </main>
   )
 }
