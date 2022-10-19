@@ -103,7 +103,6 @@ export default function Quiz(props) {
         }
       })
     })
-    console.log(count)
     setScore(count)
     setShowCorrectAnswers(true)
   }
