@@ -4,13 +4,11 @@
 	border-bottom: 5px solid var(--color-blue-base);
 	border-top: 5px solid var(--color-blue-base);
 	padding: 1em;
+	text-align: center;
 }
 
-.btn-page {
-	border: 3px solid var(--color-yellow);
-}
-
-.btn-page:hover,
-.btn-page:focus {
-	background-color: var(--color-yellow);
+@media screen and (max-width: 600px) {
+	.pagination {
+		flex-direction: column;
+	}
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {questionsData} from '../assets/data';
 import Question from './Question';
 import Pagination from './Pagination';
+import Results from './Results';
 
 
 export default function Quiz(props) {
@@ -10,6 +11,7 @@ export default function Quiz(props) {
 	const [currentPage, setCurrentPage] = useState(1)
   const [score, setScore] = useState(null)
   const [showCorrectAnswers, setShowCorrectAnswers] = useState(false)
+  const [showResults, setShowResults] = useState(false)
 
   useEffect(() => {
     if(props.options.mode == 'mock') {
@@ -118,6 +120,7 @@ export default function Quiz(props) {
     })
     setScore(count)
     setShowCorrectAnswers(true)
+    setShowResults(true)
   }
 
   let questionsDisplay
@@ -135,19 +138,26 @@ export default function Quiz(props) {
     })
   }
 
+  const displayResults = () => {
+    setShowResults(true)
+  }
+
   return (
-    <section className='questions-container'>
-      <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
-      {questionsDisplay}
-      <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
-      {score==null ?
-        <button className='btn btn-primary' onClick={checkAnswers}>Check Answers</button>
-      :
-        <>
-          <p>Your score is {score}</p>
-          <button className='btn btn-primary' onClick={props.playAgain}>Play Again</button>
-        </>
-      }
-    </section>
+    <>
+      <section className='questions-container'>
+        <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        {questionsDisplay}
+        <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        {score==null ?
+          <button className='btn btn-primary' onClick={checkAnswers}>Check Answers</button>
+        :
+          <div className='buttons-container'>
+            <button className='btn btn-primary' onClick={props.playAgain}>Play Again</button>
+            <button className='btn btn-secondary' onClick={displayResults}>Show Results</button>
+          </div>
+        }
+      </section>
+      {showResults ? <Results/> : <></>}
+    </>
   )
 }

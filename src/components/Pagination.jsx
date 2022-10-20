@@ -22,9 +22,9 @@ export default function Pagination(props) {
   }
   return (
     <div className="pagination">    
-      <button id="btn-prev" onClick={props.changePage} style={prevStyle} className="btn btn-page">Previous</button>    
+      <button id="btn-prev" onClick={props.changePage} style={prevStyle} className="btn btn-secondary">Prev page</button>    
       <h3 style={numStyle}>Page {props.currentPage} of {props.totalPages}</h3>
-      <button id="btn-next" onClick={props.changePage} style={nextStyle} className="btn btn-page">Next</button>
+      <button id="btn-next" onClick={props.changePage} style={nextStyle} className="btn btn-secondary">Next page</button>
     </div> 
   )
 }
