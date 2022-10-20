@@ -46,18 +46,22 @@ export default function Start(props) {
 
   return (
     <section>
-      <h1>Welcome to the NPLQ Lifeguard training quiz</h1>
-      <p>Select which mode you'd like to play and good luck!</p>
+      <header className="start-header">
+        <h1>Welcome to the <span className="yellow">NPLQ Lifeguard</span> training quiz</h1>
+        <h3>Select which mode you'd like to play and good luck!</h3>
+      </header>
       <form onSubmit={formSubmitHandler}>
-        <label htmlFor="mode">Select Quiz Mode</label>
-        <select name="mode" onChange={modeSelect}>
-          <option value="" selected disabled>--select--</option>
-          <option value="quickfire">Quickfire</option>
-          <option value="mock">Mock Test</option>
-        </select>
+        <fieldset>
+          <label htmlFor="mode">Select Quiz Mode</label>
+          <select name="mode" onChange={modeSelect}>
+            <option value="" selected disabled>--select--</option>
+            <option value="quickfire">Quickfire</option>
+            <option value="mock">Mock Test</option>
+          </select>
+        </fieldset>
         {
           mode=='quickfire'? 
-            <>
+            <fieldset>
               <label htmlFor="category">Select Category</label>
                 <select name="category" onChange={categorySelect}>
                   <option value="random">Random</option>
@@ -67,7 +71,7 @@ export default function Start(props) {
                 </select>
               <label htmlFor="questionsAmount">How many questions do you want to answer?</label>
               <input type="range" min="1" max="10" defaultValue="5" onChange={amountSelect}></input>              
-            </> 
+            </fieldset> 
           : mode=='mock' ? 
             <>
               <label htmlFor="paper">Select mock paper</label>

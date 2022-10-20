@@ -1,0 +1,18 @@
+.start-header {
+	background-color: var(--color-blue-base);
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+.start-header h1,
+.start-header h3 {
+	color: #ffffff;
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	margin: 1em;
+}

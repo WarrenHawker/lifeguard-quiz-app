@@ -1,0 +1,40 @@
+@import url('./abstracts/colors.css');
+@import url('./abstracts/text.css');
+@import url('./components/quiz.css');
+@import url('./components/start.css');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+html {
+	font-size: 100%;
+	font-family: var(--font-primary);
+	background-color: var(--color-background);
+}
+
+html,
+body {
+	margin: 0;
+}
+
+main {
+	padding: 0 1em;
+}
+
+h1 {
+	font-size: var(--font-size-h1);
+}
+
+h2 {
+	font-size: var(--font-size-h2);
+}
+
+h3 {
+	font-size: var(--font-size-h3);
+}
+
+p {
+	font-size: var(--font-size-base);
+}
