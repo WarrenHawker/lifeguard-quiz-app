@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import {questionsData} from '../assets/data';
 import Question from './Question';
+import Pagination from './Pagination';
 
 
 export default function Quiz(props) {
@@ -70,9 +71,21 @@ export default function Quiz(props) {
 
   const changePage = (e) => {
     if(e.target.id == 'btn-prev' ) {
-      setCurrentPage(prev => prev-1)
+      setCurrentPage((prev) => {
+        if(prev == 1) {
+          return 1
+        } else {
+          return prev-1
+        }
+      })
     } else if(e.target.id == 'btn-next') {
-      setCurrentPage(prev => prev+1)
+      setCurrentPage((prev) => {
+        if(prev == totalPages) {
+          return totalPages
+        } else {
+          return prev+1
+        }
+      })
     }
   }
 
@@ -124,40 +137,15 @@ export default function Quiz(props) {
 
   return (
     <section className='questions-container'>
-      <h3>Page {currentPage} of {totalPages}</h3>
-      {totalPages > 1 ?
-        <>
-          {currentPage != 1 ?
-            <button id="btn-prev" onClick={changePage} className="">Previous</button>
-            : <></>
-          }
-          {currentPage != totalPages ?
-            <button id="btn-next" onClick={changePage}>Next</button>
-            : <></>
-          }
-        </>
-        : <></>
-      }
+      <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
       {questionsDisplay}
-      {totalPages > 1 ?
-        <>
-          {currentPage != 1 ?
-            <button id="btn-prev" onClick={changePage}>Previous</button>
-            : <></>
-          }
-          {currentPage != totalPages ?
-            <button id="btn-next" onClick={changePage}>Next</button>
-            : <></>
-          }
-        </>
-        : <></>
-      }
+      <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
       {score==null ?
-        <button onClick={checkAnswers}>Check Answers</button>
+        <button className='btn btn-primary' onClick={checkAnswers}>Check Answers</button>
       :
         <>
           <p>Your score is {score}</p>
-          <button onClick={props.playAgain}>Play Again</button>
+          <button className='btn btn-primary' onClick={props.playAgain}>Play Again</button>
         </>
       }
     </section>

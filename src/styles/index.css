@@ -3,6 +3,7 @@
 @import url('./components/quiz.css');
 @import url('./components/start.css');
 @import url('./components/buttons.css');
+@import url('./components/pagination.css');
 
 *,
 *::after,
@@ -21,7 +22,7 @@ body {
 }
 
 section {
-	padding: 0 1em;
+	padding: 1em;
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;

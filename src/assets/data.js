@@ -655,7 +655,7 @@ export const questionsData = [
 			{
 				id: '20c',
 				answer: 'Whistle',
-				isCorrect: false,
+				isCorrect: true,
 				isSelected: false,
 			},
 			{
