@@ -2,6 +2,7 @@
 @import url('./abstracts/text.css');
 @import url('./components/quiz.css');
 @import url('./components/start.css');
+@import url('./components/buttons.css');
 
 *,
 *::after,
@@ -19,8 +20,11 @@ body {
 	margin: 0;
 }
 
-main {
+section {
 	padding: 0 1em;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
 }
 
 h1 {
@@ -33,6 +37,14 @@ h2 {
 
 h3 {
 	font-size: var(--font-size-h3);
+}
+
+h4 {
+	font-size: var(--font-size-h4);
+}
+
+h5 {
+	font-size: var(--font-size-h5);
 }
 
 p {

@@ -1,0 +1,50 @@
+.question {
+	padding: 0.5em;
+	border-bottom: 1px solid black;
+	margin-top: 1em;
+}
+
+.btn-answer {
+	width: 100%;
+}
+
+.btn-answer:hover,
+.btn-answer:focus {
+	background-color: var(--color-blue-light);
+}
+
+.btn-answer.selected {
+	background-color: var(--color-blue-base);
+	color: #ffffff;
+}
+
+.btn-answer.correct {
+	background-color: var(--color-yellow);
+}
+
+.btn-answer.selected.correct {
+	background-color: var(--color-green);
+	color: #ffffff;
+}
+
+.btn-answer.wrong.selected {
+	background-color: var(--color-red);
+}
+
+.btn-answer.not-selected {
+	background-color: transparent;
+}
+
+.btn-answer:disabled:hover {
+	cursor: default;
+}
+
+.question h5 {
+	background-color: var(--color-blue-light);
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+.question span {
+	color: var(--color-red);
+}

@@ -123,7 +123,21 @@ export default function Quiz(props) {
   }
 
   return (
-    <>
+    <section className='questions-container'>
+      <h3>Page {currentPage} of {totalPages}</h3>
+      {totalPages > 1 ?
+        <>
+          {currentPage != 1 ?
+            <button id="btn-prev" onClick={changePage} className="">Previous</button>
+            : <></>
+          }
+          {currentPage != totalPages ?
+            <button id="btn-next" onClick={changePage}>Next</button>
+            : <></>
+          }
+        </>
+        : <></>
+      }
       {questionsDisplay}
       {totalPages > 1 ?
         <>
@@ -146,6 +160,6 @@ export default function Quiz(props) {
           <button onClick={props.playAgain}>Play Again</button>
         </>
       }
-    </>
+    </section>
   )
 }

@@ -15,36 +15,35 @@ export default function Question(props) {
 	},[props.showCorrectAnswers])
 	
 	return (
-		<article id={props.data.id}>	
+		<article className="question" id={props.data.id}>	
 			<h2>{props.data.question}</h2>
 			{
 				props.data.answers.map((answer) => {
-					let style = {
-						backgroundColor: 'white'
-					}
+					let style = 'btn btn-answer'
+					
 					if(!props.showCorrectAnswers) {
 						if(answer.isSelected) {
-							style.backgroundColor = 'grey'
+							style = 'btn btn-answer selected'
 						}
 					} 
 					else if(props.showCorrectAnswers) {
 						if(answer.isCorrect && answer.isSelected) {
-							style.backgroundColor = 'green'
+							style = 'btn btn-answer correct selected'
 						} else if(answer.isCorrect && !answer.isSelected) {
-							style.backgroundColor = 'red'
+							style = 'btn btn-answer correct'
 						} else if(!answer.isCorrect && answer.isSelected) {
-							style.backgroundColor = 'grey'
+							style = 'btn btn-answer wrong selected'
 						}	else {
-							style.backgroundColor = 'white'
+							style = 'btn btn-answer not-selected'
 						}
 					} 
 					return (
-						<button disabled={props.showCorrectAnswers ? true : false} style={style} onClick={props.selectAnswer} id={answer.id} key={answer.id}>{answer.answer}</button>
+						<button className={style} disabled={props.showCorrectAnswers ? true : false} onClick={props.selectAnswer} id={answer.id} key={answer.id}>{answer.answer}</button>
 					)
 				})
 			}
 			{isCorrect == false ?
-				<p>This question is incorrect, please review by going to page {props.data.pageRef} in your lifeguard manual</p> : <></>
+				<h5>I'm sorry, you answered this question incorrectly. <br></br>Please review by going to <span>page {props.data.pageRef}</span> in your lifeguard manual.</h5> : <></>
 			}
 		</article> 
 	)

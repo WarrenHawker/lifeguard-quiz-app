@@ -1,0 +1,35 @@
+.btn {
+	font-weight: var(--font-bold);
+	cursor: pointer;
+	margin: 1em auto 1em auto;
+	padding: 0.5em 2em 0.5em 2em;
+	grid-column: 1/-1;
+	border-radius: 0.5em;
+	display: block;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: black;
+	transition: all 0.3s ease-in-out;
+	font-size: var(--font-size-base);
+}
+
+.btn-primary:disabled {
+	background-color: grey;
+	color: black;
+	display: none;
+}
+
+.btn-primary:disabled:hover {
+	transform: none;
+}
+
+.btn-primary {
+	font-size: var(--font-size-h4);
+	background-color: var(--color-blue-base);
+	color: var(--color-yellow);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	transform: scale(1.1);
+}

@@ -2,6 +2,7 @@
 	background-color: var(--color-blue-base);
 	padding: 0.5em;
 	margin-bottom: 2em;
+	text-align: center;
 }
 
 .start-header h1,
@@ -9,10 +10,109 @@
 	color: #ffffff;
 }
 
+form {
+	background-color: #ffffff;
+	box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+	border-radius: 0.5em;
+	padding: 1em;
+	font-size: var(--font-size-h5);
+}
+
 fieldset {
 	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin-bottom: 1em;
 }
 
 label {
-	margin: 1em;
+	color: #000000;
+	font-weight: var(--font-bold);
+}
+
+select {
+	font-size: var(--font-size-h5);
+	padding: 0.5em;
+	border-radius: 0.25em;
+	border: none;
+	box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 8%);
+	color: #555;
+	background-color: rgb(250, 250, 250);
+	cursor: pointer;
+
+	background-image: linear-gradient(45deg, transparent 50%, var(--color-yellow) 50%),
+		linear-gradient(135deg, var(--color-yellow) 50%, transparent 50%),
+		linear-gradient(to right, var(--color-blue-base), var(--color-blue-base));
+	background-position: calc(100% - 25px) calc(0.75em), calc(100% - 15px) calc(0.75em), 100% 0;
+	background-size: 10px 10px, 10px 10px, 2.5em 2.5em;
+	background-repeat: no-repeat;
+
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.slider-container input {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 20px;
+	border-radius: 2em;
+	cursor: pointer;
+	appearance: none;
+	background-color: var(--color-blue-light);
+}
+
+.slider-container input:hover,
+.slider-container input:focus {
+	border: 2px solid var(--color-blue-base);
+}
+
+.slider-container input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--color-blue-base);
+}
+
+.slider-container input::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--color-contrast-brigh);
+	cursor: pointer;
+}
+
+.sub-label {
+	display: block;
+	text-align: center;
+	margin-top: 0;
+	box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+	border-radius: 0.25em;
+	padding: 0.5em 1em;
+	width: max-content;
+	margin: auto;
+	background-color: var(--color-blue-light);
+	font-size: var(--font-size-h4);
+}
+
+.mode-info-container {
+	border-top: 1px solid black;
+	padding: 0 0.5em;
+	margin-bottom: 2em;
+}
+
+.mode-info-container h4 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: var(--color-blue-base);
+}
+
+.mode-info-container p {
+	font-size: var(--font-size-h5);
 }
