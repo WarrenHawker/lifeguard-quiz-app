@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {questionsData} from '../assets/data';
 import Question from './Question';
 import Pagination from './Pagination';
@@ -11,7 +11,7 @@ export default function Quiz(props) {
 	const [currentPage, setCurrentPage] = useState(1)
   const [score, setScore] = useState(null)
   const [showCorrectAnswers, setShowCorrectAnswers] = useState(false)
-  const [showResults, setShowResults] = useState(false)
+  const [showResults, setShowResults] = useState()
 
   useEffect(() => {
     if(props.options.mode == 'mock') {
@@ -110,15 +110,52 @@ export default function Quiz(props) {
   }
 
   const checkAnswers = () => {
-    let count = 0
+    let newScore = {
+      mode: props.options.mode,
+      totalQuestions: questions.length,
+      questionsSection1: 0,
+      questionsSection2: 0,
+      questionsSection3: 0,
+
+      totalCorrectAnswers: 0,
+      correctAnswersSection1: 0,
+      correctAnswersSection2: 0,
+      correctAnswersSection3: 0,
+    }
+
     questions.forEach((question) => {
       question.answers.forEach((answer) => {
         if(answer.isSelected && answer.isCorrect) {
-          return count++
+          switch(question.category) {
+            case 1:
+              newScore.correctAnswersSection1 +=1
+              break;
+            case 2:
+              newScore.correctAnswersSection2 +=1
+              break;
+            case 3:
+              newScore.correctAnswersSection3 +=1
+              break;
+          }
         }
       })
     })
-    setScore(count)
+
+    questions.forEach((question) => {
+        switch(question.category) {
+          case 1:
+            newScore.questionsSection1 +=1
+            break;
+          case 2:
+            newScore.questionsSection2 +=1
+            break;
+          case 3:
+            newScore.questionsSection3 +=1
+            break;
+        }
+      })
+
+    setScore(newScore)
     setShowCorrectAnswers(true)
     setShowResults(true)
   }
@@ -142,6 +179,17 @@ export default function Quiz(props) {
     setShowResults(true)
   }
 
+  const hideResults = () => {
+   setShowResults(false)
+  }
+
+  let resultsOverlayStyle
+  if(showResults == true) {
+    resultsOverlayStyle = 'results-overlay active'
+  } else {
+    resultsOverlayStyle = 'results-overlay'
+  }
+
   return (
     <>
       <section className='questions-container'>
@@ -157,7 +205,9 @@ export default function Quiz(props) {
           </div>
         }
       </section>
-      {showResults ? <Results/> : <></>}
+      <div className={resultsOverlayStyle}>
+      {showResults ? <Results score={score} showResults={showResults} hideResults={hideResults}/> : <></>}
+      </div>
     </>
   )
 }

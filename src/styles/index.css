@@ -4,6 +4,7 @@
 @import url('./components/start.css');
 @import url('./components/buttons.css');
 @import url('./components/pagination.css');
+@import url('./components/results.css');
 
 *,
 *::after,

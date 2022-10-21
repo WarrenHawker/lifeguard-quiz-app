@@ -11,4 +11,9 @@
 	.pagination {
 		flex-direction: column;
 	}
+
+	.pagination button {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
