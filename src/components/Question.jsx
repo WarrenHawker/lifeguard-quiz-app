@@ -43,7 +43,7 @@ export default function Question(props) {
 				})
 			}
 			{isCorrect == false ?
-				<h5>I'm sorry, you answered this question incorrectly. <br></br>Please review by going to <span>page {props.data.pageRef}</span> in your lifeguard manual.</h5> : <></>
+				<h5>You answered this question incorrectly. <br></br>Please review by going to <span>page {props.data.pageRef}</span> in your lifeguard manual.</h5> : <></>
 			}
 		</article> 
 	)

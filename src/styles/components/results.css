@@ -71,10 +71,22 @@
 	margin: auto;
 }
 
+.results-sub-container.categories {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.results-sub-container.categories span.black {
+	color: #000000;
+}
+
 .results-sub-container p,
 .results-sub-container span {
 	margin: 0;
 	text-align: left;
+}
+
+.results-sub-container p {
+	font-weight: var(--font-bold);
 }
 
 .results-container span {
