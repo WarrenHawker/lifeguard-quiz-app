@@ -192,7 +192,7 @@ export default function Quiz(props) {
 
   return (
     <>
-      <section className='questions-container'>
+      <section className='questions-container'>      
         <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {questionsDisplay}
         <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>

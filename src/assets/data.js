@@ -4,7 +4,7 @@ export const questionsData = [
 		id: 1,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 88,
 		question: 'Identify why it is important to have a whistle whilst lifeguarding',
 		answers: [
 			{
@@ -37,7 +37,7 @@ export const questionsData = [
 		id: 2,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 7,
 		question:
 			'In addition to maintaining a positive attitude identify which of the following is a responsibility of a lifeguard',
 		answers: [
@@ -71,7 +71,7 @@ export const questionsData = [
 		id: 3,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question: 'Identify which of the following is an element of the Normal Operating Plan (NOP)',
 		answers: [
 			{
@@ -104,7 +104,7 @@ export const questionsData = [
 		id: 4,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question:
 			'Identify what information about the swimming pool is most likely to be included in the Normal Operating Plan (NOP)',
 		answers: [
@@ -138,7 +138,7 @@ export const questionsData = [
 		id: 5,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question: 'Identify which of the following is an element of the Emergency Action Plan (EAP)',
 		answers: [
 			{
@@ -171,7 +171,7 @@ export const questionsData = [
 		id: 6,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 102,
 		question:
 			'Identify which of the following could be considered a serious injury to a member of the public and require the Emergency Action Plan to be implemented',
 		answers: [
@@ -205,7 +205,7 @@ export const questionsData = [
 		id: 7,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 25,
 		question: 'Identify which user groups are most likely to be identified in a Safeguarding policy',
 		answers: [
 			{
@@ -238,7 +238,7 @@ export const questionsData = [
 		id: 8,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 9,
 		question: 'Identify the responsibilities of the employer under the Health and Safety law in your own country',
 		answers: [
 			{
@@ -271,7 +271,7 @@ export const questionsData = [
 		id: 9,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 11,
 		question:
 			'In addition to developing PSOPs, identify one other responsibility a lifeguard has under the Health and Safety law relevant to your own country',
 		answers: [
@@ -305,7 +305,7 @@ export const questionsData = [
 		id: 10,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 11,
 		question:
 			'In addition to developing PSOPs, identify one other responsibility a lifeguard has under the Health and Safety at Work Act 1974',
 		answers: [
@@ -339,7 +339,7 @@ export const questionsData = [
 		id: 11,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 35,
 		question: 'Identify what is meant by a control measure in the context of risk assessment',
 		answers: [
 			{
@@ -372,7 +372,7 @@ export const questionsData = [
 		id: 12,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 10,
 		question: 'Identify the main purpose of industry guidance',
 		answers: [
 			{
@@ -405,7 +405,7 @@ export const questionsData = [
 		id: 13,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 53,
 		question: 'Identify what lifeguards must NEVER do when using chemicals',
 		answers: [
 			{
@@ -438,7 +438,7 @@ export const questionsData = [
 		id: 14,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 26,
 		question: 'Identify which of the following is most likely to be included in an admission policy',
 		answers: [
 			{
@@ -471,7 +471,7 @@ export const questionsData = [
 		id: 15,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 67,
 		question: 'Identify what is meant by the 10:20 scanning system',
 		answers: [
 			{
@@ -504,7 +504,7 @@ export const questionsData = [
 		id: 16,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 83,
 		question: 'Identify how long it should take a lifeguard to rotate into a lifeguarding position on poolside',
 		answers: [
 			{
@@ -537,7 +537,7 @@ export const questionsData = [
 		id: 17,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 84,
 		question: 'Identify one form of technology which can be used to assist lifeguard observation',
 		answers: [
 			{
@@ -570,7 +570,7 @@ export const questionsData = [
 		id: 18,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 32,
 		question: 'Identify the hazards commonly associated with a leisure pool',
 		answers: [
 			{
@@ -603,7 +603,7 @@ export const questionsData = [
 		id: 19,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 39,
 		question:
 			'Identify which of the following is most likely to affect a lifeguard’s ability to see swimmers through the water',
 		answers: [
@@ -637,7 +637,7 @@ export const questionsData = [
 		id: 20,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 87,
 		question: 'Identify which form of communication a lifeguard is most likely to use whilst supervising the pool',
 		answers: [
 			{
@@ -670,7 +670,7 @@ export const questionsData = [
 		id: 21,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 16,
 		question: 'Identify how a lifeguard should interact with customers',
 		answers: [
 			{
@@ -703,7 +703,7 @@ export const questionsData = [
 		id: 22,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 78,
 		question:
 			'Identify which of the following factors could affect the number of lifeguards required to supervise a leisure pool',
 		answers: [
@@ -737,7 +737,7 @@ export const questionsData = [
 		id: 23,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 46,
 		question: 'Identify what a lifeguard may need to be mindful of when supervising a flume',
 		answers: [
 			{
@@ -770,7 +770,7 @@ export const questionsData = [
 		id: 24,
 		paper: 1,
 		category: 1,
-		pageRef: 200,
+		pageRef: 44,
 		question: 'Identify one common hazard associated with moveable floors',
 		answers: [
 			{
@@ -804,7 +804,7 @@ export const questionsData = [
 		id: 25,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 102,
 		question:
 			'A casualty is floating face down in the water. Select which type of swimmer the casualty is most likely to be',
 		answers: [
@@ -838,7 +838,7 @@ export const questionsData = [
 		id: 26,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 101,
 		question:
 			'A casualty has an expression of pain on their face and is holding their arm. Select which type of swimmer the casualty is most likely to be',
 		answers: [
@@ -872,7 +872,7 @@ export const questionsData = [
 		id: 27,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 106,
 		question:
 			'Select which of the following is a piece of swimming pool rescue equipment a lifeguard would use to rescue a casualty',
 		answers: [
@@ -906,7 +906,7 @@ export const questionsData = [
 		id: 28,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 109,
 		question: 'Identify how a reaching pole should be used in an emergency',
 		answers: [
 			{
@@ -939,7 +939,7 @@ export const questionsData = [
 		id: 29,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 100,
 		question:
 			'A swimmer is responsive but has a nose bleed. Identify what the swimmer may be able to do to aid their rescue',
 		answers: [
@@ -973,7 +973,7 @@ export const questionsData = [
 		id: 30,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 114,
 		question:
 			'Select which type of rescue should be attempted when an unconscious casualty is floating on the bottom of the pool',
 		answers: [
@@ -1007,7 +1007,7 @@ export const questionsData = [
 		id: 31,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 127,
 		question:
 			'Identify the correct way a lifeguard should enter the swimming pool when dealing with a swimmer who has a suspected spinal cord injury',
 		answers: [
@@ -1041,7 +1041,7 @@ export const questionsData = [
 		id: 32,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 125,
 		question: 'Select from the list below the most likely cause of a spinal injury in a swimming pool environment',
 		answers: [
 			{
@@ -1074,7 +1074,7 @@ export const questionsData = [
 		id: 33,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 126,
 		question:
 			'A casualty was seen diving into the pool and is floating face down in the water and can’t turn over. Identify what type of injury the casualty is most likely to have',
 		answers: [
@@ -1108,7 +1108,7 @@ export const questionsData = [
 		id: 34,
 		paper: 1,
 		category: 2,
-		pageRef: 200,
+		pageRef: 101,
 		question:
 			'A casualty is responsive but feels dizzy. Identify what the swimmer may be able to do to aid their rescue',
 		answers: [
@@ -1143,7 +1143,7 @@ export const questionsData = [
 		id: 35,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 196,
 		question:
 			'Identify who from the list below who is most likely to have the responsibility of wearing PPE and providing first aid',
 		answers: [
@@ -1177,7 +1177,7 @@ export const questionsData = [
 		id: 36,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 198,
 		question:
 			'A lifeguard is treating a casualty with a minor cut to their arm. Identify how they should minimise the risk of infection to themselves and the casualty',
 		answers: [
@@ -1215,7 +1215,7 @@ export const questionsData = [
 		id: 37,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 196,
 		question: 'Identify who should complete an accident report form following an accident',
 		answers: [
 			{
@@ -1248,7 +1248,7 @@ export const questionsData = [
 		id: 38,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 170,
 		question: 'Identify the correct sequence of the chain of survival',
 		answers: [
 			{
@@ -1281,7 +1281,7 @@ export const questionsData = [
 		id: 39,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 230,
 		question: 'A casualty is having a seizure in the cafe. Identify what treatment a lifeguard should administer',
 		answers: [
 			{
@@ -1318,7 +1318,7 @@ export const questionsData = [
 		id: 40,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 174,
 		question:
 			'Identify what treatment needs to be administered when a casualty is displaying Agonal gasps and seizure like episodes',
 		answers: [
@@ -1352,7 +1352,7 @@ export const questionsData = [
 		id: 41,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 181,
 		question: 'Identify what a lifeguard should do if they hear a casualty’s rib break whilst they are performing CPR',
 		answers: [
 			{
@@ -1385,7 +1385,7 @@ export const questionsData = [
 		id: 42,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 183,
 		question:
 			'A casualty is asking for help, they are holding their throat, coughing and visibly distressed. What condition are the most likely to have',
 		answers: [
@@ -1419,7 +1419,7 @@ export const questionsData = [
 		id: 43,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 210,
 		question: 'Identify what the blood from a severe external bleed is likely to look like',
 		answers: [
 			{
@@ -1452,7 +1452,7 @@ export const questionsData = [
 		id: 44,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 214,
 		question: 'A casualty has a small splinter in their arm. Identify what actions a lifeguard should take',
 		answers: [
 			{
@@ -1489,7 +1489,7 @@ export const questionsData = [
 		id: 45,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 203,
 		question:
 			'A swimmer has cut themselves badly and is suffering from shock. Identify what signs and symptoms they may have',
 		answers: [
@@ -1523,7 +1523,7 @@ export const questionsData = [
 		id: 46,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 236,
 		question: 'Identify what information a lifeguard should collect about a casualty for an accident report form',
 		answers: [
 			{
@@ -1556,7 +1556,7 @@ export const questionsData = [
 		id: 47,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 218,
 		question:
 			'A casualty has severe pain in their arm and shoulder, they cannot move their arm and their shoulder appears to be swollen and deformed. Identify what condition they are MOST likely to have',
 		answers: [
@@ -1590,7 +1590,7 @@ export const questionsData = [
 		id: 48,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 222,
 		question: 'A casualty is suffering from a suspected head injury. Identify what treatment a lifeguard should give',
 		answers: [
 			{
@@ -1623,7 +1623,7 @@ export const questionsData = [
 		id: 49,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 223,
 		question: 'Identify what treatment a lifeguard should administer to a casualty with a penetrating chest injury',
 		answers: [
 			{
@@ -1658,7 +1658,7 @@ export const questionsData = [
 		id: 50,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 215,
 		question:
 			'An elderly casualty has burnt their arm on a hot pipe in the sauna. Identify what treatment a lifeguard should administer',
 		answers: [
@@ -1696,7 +1696,7 @@ export const questionsData = [
 		id: 51,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 224,
 		question: 'Identify the correct treatment for a casualty who has a piece of wood embedded in their eye',
 		answers: [
 			{
@@ -1732,7 +1732,7 @@ export const questionsData = [
 		id: 52,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 227,
 		question: 'Identify the correct treatment for a casualty who has been poisoned',
 		answers: [
 			{
@@ -1765,7 +1765,7 @@ export const questionsData = [
 		id: 53,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 206,
 		question: 'Identify the correct treatment for a casualty who is suffering from anaphylaxis',
 		answers: [
 			{
@@ -1798,7 +1798,7 @@ export const questionsData = [
 		id: 54,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 229,
 		question: 'Identify how to treat a casualty suffering a diabetic emergency (hypoglycaemia)',
 		answers: [
 			{
@@ -1831,7 +1831,7 @@ export const questionsData = [
 		id: 55,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 209,
 		question: 'A casualty is hyperventilating. Identify what treatment a lifeguard should administer',
 		answers: [
 			{
@@ -1865,7 +1865,7 @@ export const questionsData = [
 		id: 56,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 225,
 		question: 'A casualty has chipped their tooth. Identify what treatment a lifeguard should administer',
 		answers: [
 			{
@@ -1902,7 +1902,7 @@ export const questionsData = [
 		id: 57,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 225,
 		question:
 			'A lifeguard has been standing still for a long period of time, has blurred vision and feels nauseous. Identify what condition they may be about to suffer from',
 		answers: [
@@ -1936,7 +1936,7 @@ export const questionsData = [
 		id: 58,
 		paper: 1,
 		category: 3,
-		pageRef: 200,
+		pageRef: 231,
 		question: 'A casualty is suffering from heat exhaustion. Identify what treatment a lifeguard should administer',
 		answers: [
 			{
@@ -1970,7 +1970,7 @@ export const questionsData = [
 		id: 59,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 7,
 		question:
 			'In addition to maintaining a positive attitude identify which of the following is a responsibility of a lifeguard',
 		answers: [
@@ -2004,7 +2004,7 @@ export const questionsData = [
 		id: 60,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 7,
 		question:
 			'In addition to maintaining a positive attitude, identify which of the following is a responsibility of	a lifeguard',
 		answers: [
@@ -2038,7 +2038,7 @@ export const questionsData = [
 		id: 61,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question: 'Identify which of the following is an element of the Normal Operating Plan (NOP)',
 		answers: [
 			{
@@ -2071,7 +2071,7 @@ export const questionsData = [
 		id: 62,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question:
 			'Identify what information about the swimming pool is most likely to be included in the Normal Operating Plan (NOP)',
 		answers: [
@@ -2105,7 +2105,7 @@ export const questionsData = [
 		id: 63,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question: 'Identify which of the following is an element of the Emergency Action Plan (EAP)',
 		answers: [
 			{
@@ -2138,7 +2138,7 @@ export const questionsData = [
 		id: 64,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 24,
 		question: 'Identify which document will contain information on what to do in a lighting failure',
 		answers: [
 			{
@@ -2171,7 +2171,7 @@ export const questionsData = [
 		id: 65,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 25,
 		question: 'Identify which user groups are most likely to be identified in a Safeguarding policy',
 		answers: [
 			{
@@ -2204,7 +2204,7 @@ export const questionsData = [
 		id: 66,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 9,
 		question: 'Select which of the following responsibilities an employer has under the Health and Safety at Work Act',
 		answers: [
 			{
@@ -2237,7 +2237,7 @@ export const questionsData = [
 		id: 67,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 11,
 		question: 'Identify one other responsibility a lifeguard has under the Health and Safety at Work Act 1974',
 		answers: [
 			{
@@ -2270,7 +2270,7 @@ export const questionsData = [
 		id: 68,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 35,
 		question: 'Identify the correct definition of a risk',
 		answers: [
 			{
@@ -2303,7 +2303,7 @@ export const questionsData = [
 		id: 69,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 21,
 		question: 'Identify what an employer should provide a lifeguard before they start lifeguarding duties',
 		answers: [
 			{
@@ -2336,7 +2336,7 @@ export const questionsData = [
 		id: 70,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 10,
 		question: 'Identify the correct purpose of swimming pool management industry guidance',
 		answers: [
 			{
@@ -2369,7 +2369,7 @@ export const questionsData = [
 		id: 71,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 12,
 		question: 'Identify what an operator should have in place to ensure the safe use of cleaning chemicals',
 		answers: [
 			{
@@ -2402,7 +2402,7 @@ export const questionsData = [
 		id: 72,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 46,
 		question: 'Identify one common hazard associated with using a flume',
 		answers: [
 			{
@@ -2435,7 +2435,7 @@ export const questionsData = [
 		id: 73,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 37,
 		question: 'Identify which of the following should be included on a swimming pool closing check for safety	reasons',
 		answers: [
 			{
@@ -2468,7 +2468,7 @@ export const questionsData = [
 		id: 74,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 67,
 		question: 'Identify what is meant by the 10:20 scanning system',
 		answers: [
 			{
@@ -2501,7 +2501,7 @@ export const questionsData = [
 		id: 75,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 83,
 		question: 'Identify how long it should take a lifeguard to rotate into a lifeguarding position on poolside',
 		answers: [
 			{
@@ -2534,7 +2534,7 @@ export const questionsData = [
 		id: 76,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 85,
 		question: 'Identify one disadvantage of technology systems used to support lifeguards',
 		answers: [
 			{
@@ -2567,7 +2567,7 @@ export const questionsData = [
 		id: 77,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 32,
 		question: 'Identify the hazards commonly associated with a leisure pool',
 		answers: [
 			{
@@ -2600,7 +2600,7 @@ export const questionsData = [
 		id: 78,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 46,
 		question: 'Identify what a lifeguard may need to be mindful of when supervising a flume',
 		answers: [
 			{
@@ -2633,7 +2633,7 @@ export const questionsData = [
 		id: 79,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 60,
 		question:
 			'Identify which of the following factors could affect the number of lifeguards required to supervise an inflatable session',
 		answers: [
@@ -2667,7 +2667,7 @@ export const questionsData = [
 		id: 80,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 80,
 		question: 'Select which factor is most likely to affect a lifeguard’s ability to see swimmers through the water',
 		answers: [
 			{
@@ -2700,7 +2700,7 @@ export const questionsData = [
 		id: 81,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 90,
 		question: 'Select the most appropriate reason for using a poolside assistance alarm',
 		answers: [
 			{
@@ -2733,7 +2733,7 @@ export const questionsData = [
 		id: 82,
 		paper: 2,
 		category: 1,
-		pageRef: 200,
+		pageRef: 87,
 		question: 'Identify why a lifeguard may need to briefly interact with a customer whilst supervising the pool',
 		answers: [
 			{
@@ -2767,7 +2767,7 @@ export const questionsData = [
 		id: 83,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 101,
 		question:
 			'A casualty is vertical in the water is fighting to get to the surface and unable to call for help.	Select which type of swimmer the casualty is most likely to be',
 		answers: [
@@ -2801,7 +2801,7 @@ export const questionsData = [
 		id: 84,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 101,
 		question:
 			'A casualty has an expression of pain on their face and is holding their stomach.	Select which type of swimmer the casualty is most likely to be',
 		answers: [
@@ -2835,7 +2835,7 @@ export const questionsData = [
 		id: 85,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 106,
 		question: 'Select which of the following is a piece of swimming pool rescue equipment',
 		answers: [
 			{
@@ -2868,40 +2868,7 @@ export const questionsData = [
 		id: 86,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
-		question: 'Identify how a reaching pole should be used in an emergency',
-		answers: [
-			{
-				id: '86a',
-				answer: 'Throw the reaching pole to the casualty and encourage them to swim to the side',
-				isCorrect: false,
-				isSelected: false,
-			},
-			{
-				id: '86b',
-				answer: 'Enter the water with the reach pole and give it to the casualty to hold onto for security',
-				isCorrect: false,
-				isSelected: false,
-			},
-			{
-				id: '86c',
-				answer: 'Wave the reaching pole up high, encouraging the casualty to keep their head up',
-				isCorrect: false,
-				isSelected: false,
-			},
-			{
-				id: '86d',
-				answer: 'Assume a low position on poolside and extend the reaching pole towards the casualty',
-				isCorrect: true,
-				isSelected: false,
-			},
-		],
-	},
-	{
-		id: 86,
-		paper: 2,
-		category: 2,
-		pageRef: 200,
+		pageRef: 109,
 		question: 'Identify how a reaching pole should be used in an emergency',
 		answers: [
 			{
@@ -2934,7 +2901,7 @@ export const questionsData = [
 		id: 87,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 100,
 		question:
 			'A swimmer has a nose bleed and is responsive. Identify what the swimmer may be able to do to aid their rescue',
 		answers: [
@@ -2968,7 +2935,7 @@ export const questionsData = [
 		id: 88,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 127,
 		question:
 			'Identify the correct way a lifeguard should enter the swimming pool when dealing with a swimmer who has a suspected spinal cord injury',
 		answers: [
@@ -3002,7 +2969,7 @@ export const questionsData = [
 		id: 89,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 108,
 		question: 'Identify when a lifeguard should use a poolside-based rescue',
 		answers: [
 			{
@@ -3035,7 +3002,7 @@ export const questionsData = [
 		id: 90,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 110,
 		question: 'Identify the reason a lifeguard should perform an in-water rescue',
 		answers: [
 			{
@@ -3068,7 +3035,7 @@ export const questionsData = [
 		id: 91,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 125,
 		question:
 			'Identify what type of injury a casualty is most likely to have, if they have fallen awkwardly from	the pool inflatable and has a loss of muscle control in their legs and is disorientated.',
 		answers: [
@@ -3102,7 +3069,7 @@ export const questionsData = [
 		id: 92,
 		paper: 2,
 		category: 2,
-		pageRef: 200,
+		pageRef: 125,
 		question: 'Select from the list below the most likely cause of a spinal injury in a swimming pool environment',
 		answers: [
 			{
@@ -3136,7 +3103,7 @@ export const questionsData = [
 		id: 93,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 195,
 		question: 'Identify which of the following is an aim of first aid',
 		answers: [
 			{
@@ -3169,7 +3136,7 @@ export const questionsData = [
 		id: 94,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 198,
 		question: 'Identify what a lifeguard should avoid doing when treating a casualty with a laceration to their	leg',
 		answers: [
 			{
@@ -3202,7 +3169,7 @@ export const questionsData = [
 		id: 95,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 196,
 		question: 'Identify who should complete an accident report form following a first aid incident',
 		answers: [
 			{
@@ -3235,7 +3202,7 @@ export const questionsData = [
 		id: 96,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 170,
 		question: 'Identify the first two links of the chain of survival',
 		answers: [
 			{
@@ -3268,7 +3235,7 @@ export const questionsData = [
 		id: 97,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 230,
 		question: 'A casualty is having a seizure in reception. Identify what treatment a lifeguard should administer',
 		answers: [
 			{
@@ -3301,7 +3268,7 @@ export const questionsData = [
 		id: 98,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 174,
 		question: 'Identify which of the following signs indicate you should administer CPR',
 		answers: [
 			{
@@ -3334,7 +3301,7 @@ export const questionsData = [
 		id: 99,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 181,
 		question: 'Identify what a lifeguard should do if they are carrying out CPR on a casualty who has a tracheostomy',
 		answers: [
 			{
@@ -3367,7 +3334,7 @@ export const questionsData = [
 		id: 100,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 183,
 		question:
 			'A casualty is holding their throat, struggling to breathe, is unable to speak and their face is turning blue. Identify what condition they are most likely to have',
 		answers: [
@@ -3401,7 +3368,7 @@ export const questionsData = [
 		id: 101,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 210,
 		question: 'Blood is oozing from a casualty’s wound. Select which type of bleed the casualty is most likely to have',
 		answers: [
 			{
@@ -3434,7 +3401,7 @@ export const questionsData = [
 		id: 102,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 211,
 		question: 'A casualty has a graze on their arm. Identify what treatment a lifeguard should administer',
 		answers: [
 			{
@@ -3467,7 +3434,7 @@ export const questionsData = [
 		id: 103,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 203,
 		question:
 			'A casualty has cut their leg badly. They are thirsty, pale, confused and feeling sick. Identify which condition the casualty is MOST likely to be suffering from',
 		answers: [
@@ -3501,7 +3468,7 @@ export const questionsData = [
 		id: 104,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 199,
 		question: 'Identify what information about a casualty’s history may help a lifeguard',
 		answers: [
 			{
@@ -3534,7 +3501,7 @@ export const questionsData = [
 		id: 105,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 221,
 		question:
 			'Whilst swimming a casualty cannot move or relax their toes and they are painful. Identify what	condition they are MOST likely to have',
 		answers: [
@@ -3568,7 +3535,7 @@ export const questionsData = [
 		id: 106,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 222,
 		question: 'Identify what treatment a lifeguard should give a casualty who is suffering from a serious head injury',
 		answers: [
 			{
@@ -3601,7 +3568,7 @@ export const questionsData = [
 		id: 107,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 223,
 		question: 'Identify what treatment a lifeguard should administer to a casualty with a flail chest',
 		answers: [
 			{
@@ -3634,7 +3601,7 @@ export const questionsData = [
 		id: 108,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 215,
 		question: 'A casualty has burnt their leg. Identify what treatment a lifeguard should give',
 		answers: [
 			{
@@ -3667,7 +3634,7 @@ export const questionsData = [
 		id: 109,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 224,
 		question: 'Identify the correct treatment for a casualty who has a piece of wood embedded in their eye',
 		answers: [
 			{
@@ -3700,7 +3667,7 @@ export const questionsData = [
 		id: 110,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 227,
 		question: 'A casualty has swallowed a poisonous substance. Identify the correct treatment',
 		answers: [
 			{
@@ -3733,7 +3700,7 @@ export const questionsData = [
 		id: 111,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 205,
 		question:
 			'Ask the casualty if they have an auto-injector, call 999/112 and monitor breathing, is the treatment for what condition?',
 		answers: [
@@ -3767,7 +3734,7 @@ export const questionsData = [
 		id: 112,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 202,
 		question:
 			'Call 999/112, assist the casualty to sit in a half-sitting position, loosen tight clothing and monitor the casualty, is the treatment for what condition?',
 		answers: [
@@ -3801,7 +3768,7 @@ export const questionsData = [
 		id: 113,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 209,
 		question:
 			'Move the casualty to a quiet area, encourage them to breathe through their nose, give sips of water, is the treatment for what condition?',
 		answers: [
@@ -3835,7 +3802,7 @@ export const questionsData = [
 		id: 114,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 225,
 		question: 'Identify what treatment a lifeguard should administer to a casualty who has broken their tooth',
 		answers: [
 			{
@@ -3868,7 +3835,7 @@ export const questionsData = [
 		id: 115,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 225,
 		question: 'Identify the common signs and symptoms of a casualty who is about to faint',
 		answers: [
 			{
@@ -3901,7 +3868,7 @@ export const questionsData = [
 		id: 116,
 		paper: 2,
 		category: 3,
-		pageRef: 200,
+		pageRef: 231,
 		question: 'Identify what treatment that should be given for heat exhaustion',
 		answers: [
 			{
