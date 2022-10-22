@@ -1,5 +1,4 @@
 export default function Results(props) {
-  console.log(props)
   if(props.score) {
     let totalCorrectAnswers = props.score.correctAnswersSection1 + props.score.correctAnswersSection2 + props.score.correctAnswersSection3
     let Percentages = {

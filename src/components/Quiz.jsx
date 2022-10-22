@@ -73,6 +73,7 @@ export default function Quiz(props) {
   }
 
   const changePage = (e) => {
+    document.querySelector('#top').scrollIntoView({behavior: "smooth", block: "start"})
     if(e.target.id == 'btn-prev' ) {
       setCurrentPage((prev) => {
         if(prev == 1) {
@@ -111,6 +112,7 @@ export default function Quiz(props) {
   }
 
   const checkAnswers = () => {
+    document.querySelector('#top').scrollIntoView({behavior: "smooth", block: "start"})
     let newScore = {
       mode: props.options.mode,
       totalQuestions: questions.length,
@@ -193,11 +195,11 @@ export default function Quiz(props) {
   return (
     <>
       <section className='questions-container'>      
-        <Pagination showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        <Pagination id="top" showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {questionsDisplay}
-        <Pagination showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        <Pagination id="bottom" showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {score==null ?
-          <button className='btn btn-primary' onClick={checkAnswers}>Check Answers</button>
+          <button className='btn btn-primary' onClick={checkAnswers}>Finish Quiz</button>
         :
           <div className='buttons-container'>
             <button className='btn btn-primary' onClick={props.playAgain}>Play Again</button>

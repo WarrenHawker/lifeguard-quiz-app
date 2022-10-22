@@ -26,7 +26,7 @@ export default function Pagination(props) {
     nextStyle.visibility = 'hidden'
   }
   return (
-    <div className='header-footer'>
+    <div className='header-footer' id={props.id}>
       <Timer showCorrectAnswers={props.showCorrectAnswers} mode={props.mode}/> 
     <div className="pagination">  
       <button id="btn-prev" onClick={props.changePage} style={prevStyle} className="btn btn-secondary">Prev page</button>    
