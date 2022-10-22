@@ -3,38 +3,39 @@ import {questionsData} from '../assets/data';
 import Question from './Question';
 import Pagination from './Pagination';
 import Results from './Results';
+import { Link, useLocation } from 'react-router-dom';
 
-
-
-export default function Quiz(props) {
+export default function Quiz() {
   const [questions, setQuestions] = useState()
   const [totalPages, setTotalPages] = useState(1)
 	const [currentPage, setCurrentPage] = useState(1)
   const [score, setScore] = useState(null)
   const [showCorrectAnswers, setShowCorrectAnswers] = useState(false)
-  const [showResults, setShowResults] = useState()
+  const [showResults, setShowResults] = useState() 
+
+  const options = useLocation().state.data
 
   useEffect(() => {
-    if(props.options.mode == 'mock') {
-      const selectedQuestions = questionsData.filter(question => question.paper == props.options.paper).map((question, index) => {
+    if(options.mode == 'mock') {
+      const selectedQuestions = questionsData.filter(question => question.paper == options.paper).map((question, index) => {
         const pageNum = Math.ceil((index+1)/5)
 		      return ({...question, pageNum:pageNum})
       })
       setQuestions(selectedQuestions)
-    } else if(props.options.mode == 'quickfire') {
+    } else if(options.mode == 'quickfire') {
       let selectedQuestions;
       let possibleQuestions;
-      if(props.options.category == 'random') {
+      if(options.category == 'random') {
         possibleQuestions = questionsData;
       } else {
         possibleQuestions = questionsData.filter((question) => {
-          return question.category == props.options.category        
+          return question.category == options.category        
         })
       }
       shuffle(possibleQuestions);
 
       selectedQuestions = possibleQuestions.filter((question, index) => {
-          if(index < props.options.questionsAmount) {
+          if(index < options.questionsAmount) {
             return question
           }
         }).map((question, index) => {
@@ -114,7 +115,7 @@ export default function Quiz(props) {
   const checkAnswers = () => {
     document.querySelector('#top').scrollIntoView({behavior: "smooth", block: "start"})
     let newScore = {
-      mode: props.options.mode,
+      mode: options.mode,
       totalQuestions: questions.length,
       questionsSection1: 0,
       questionsSection2: 0,
@@ -195,14 +196,14 @@ export default function Quiz(props) {
   return (
     <>
       <section className='questions-container'>      
-        <Pagination id="top" showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        <Pagination id="top" showCorrectAnswers={showCorrectAnswers} mode={options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {questionsDisplay}
-        <Pagination id="bottom" showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        <Pagination showCorrectAnswers={showCorrectAnswers} mode={options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {score==null ?
           <button className='btn btn-primary' onClick={checkAnswers}>Finish Quiz</button>
         :
           <div className='buttons-container'>
-            <button className='btn btn-primary' onClick={props.playAgain}>Play Again</button>
+            <Link to='/'><button className='btn btn-primary'>Play Again</button></Link>
             <button className='btn btn-secondary' onClick={displayResults}>Show Results</button>
           </div>
         }

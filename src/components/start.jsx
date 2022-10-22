@@ -1,46 +1,51 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Start(props) {
-  const [mode, setMode] = useState()
-  const [category, setCategory] = useState('random')
-  const [questionsAmount, setQuestionsAmount] = useState(5)
-  const [paper, setPaper] = useState(1)
-  const modeSelect = (e) => {
-    setMode(e.target.value)
-  }
 
-  const formSubmitHandler = (e) => {
-    e.preventDefault();
-    let options
-    if(mode == 'quickfire') {
-      options = {
+  const [options, setOptions] = useState({
+    mode: null,
+    category: 'random',
+    questionsAmount: 5,
+    paper: null,
+  })
+
+  let newOptions
+  const modeSelect = (e) => {
+    if(e.target.value == 'quickfire') {
+      newOptions = {
         mode: 'quickfire',
-        category: category,
-        questionsAmount: questionsAmount,
+        category: 'random',
+        questionsAmount: 5,
         paper: null,
       }
     } else {
-      options = {
+      newOptions = {
         mode: 'mock',
         category: null,
         questionsAmount: null,
-        paper: paper,
+        paper: 1,
       }
     }
-
-    props.startFormHandler(options)
+    setOptions(newOptions)
   }
 
   const categorySelect = (e) => {
-    setCategory(e.target.value)
+    setOptions((prevOptions) => {
+      return {...prevOptions, category: e.target.value}
+    })
   }
 
   const amountSelect = (e) => {
-    setQuestionsAmount(e.target.value)
+    setOptions((prevOptions) => {
+      return {...prevOptions, questionsAmount: e.target.value}
+    })
   }
 
   const paperSelect = (e) => {
-    setPaper(e.target.value)
+    setOptions((prevOptions) => {
+      return {...prevOptions, paper: e.target.value}
+    })
   }
 
 
@@ -52,7 +57,7 @@ export default function Start(props) {
         </header>
         
       <section>
-        <form onSubmit={formSubmitHandler}>
+        <form>
           <fieldset>
             <label htmlFor="mode">Select Quiz Mode</label>
             <select name="mode" onChange={modeSelect}>
@@ -62,7 +67,7 @@ export default function Start(props) {
             </select>
           </fieldset>
           {
-            mode=='quickfire'? 
+            options.mode=='quickfire'? 
               <>
               <div className="mode-info-container">
                 <h4>Answer questions as quickly as you can!</h4>
@@ -79,11 +84,11 @@ export default function Start(props) {
                 </fieldset>
                 <fieldset className="slider-container">
                   <label htmlFor="questionsAmount">How many questions do you want to answer?</label>
-                  <input type="range" min="1" max="20" defaultValue={questionsAmount} onChange={amountSelect}></input>
-                  <label className="sub-label">{questionsAmount}</label>              
+                  <input type="range" min="1" max="20" defaultValue={options.questionsAmount} onChange={amountSelect}></input>
+                  <label className="sub-label">{options.questionsAmount}</label>              
                 </fieldset> 
               </>
-            : mode=='mock' ? 
+            : options.mode=='mock' ? 
             <>
               <div className="mode-info-container">
                 <h4>Take a full mock test</h4>
@@ -99,7 +104,7 @@ export default function Start(props) {
             </>
             : <></>
           }
-          <button className="btn btn-primary" disabled={!mode ? true : false}>Start Quiz</button>
+          <Link to='/quiz' state={{data: options}}><button className="btn btn-primary" disabled={!options.mode ? true : false}>Start Quiz</button></Link>
         </form>
       </section>
     </>
