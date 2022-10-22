@@ -116,8 +116,7 @@ export default function Quiz(props) {
       questionsSection1: 0,
       questionsSection2: 0,
       questionsSection3: 0,
-
-      totalCorrectAnswers: 0,
+      
       correctAnswersSection1: 0,
       correctAnswersSection2: 0,
       correctAnswersSection3: 0,

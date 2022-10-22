@@ -1,11 +1,13 @@
 export default function Results(props) {
   if(props.score) {
+    let totalCorrectAnswers = props.score.correctAnswersSection1 + props.score.correctAnswersSection2 + props.score.correctAnswersSection3
     let Percentages = {
-      total: (props.score.totalCorrectAnswers / props.score.totalQuestions) * 100,
+      total: (totalCorrectAnswers / props.score.totalQuestions) * 100,
       section1: (props.score.correctAnswersSection1 / props.score.questionsSection1) * 100,
       section2: (props.score.correctAnswersSection2 / props.score.questionsSection2) * 100,
       section3: (props.score.correctAnswersSection3 / props.score.questionsSection3) * 100,
     }
+
     return (
         <div className="results-container">
         <i onClick={props.hideResults} className="fa fa-window-close" id="results-close"></i>
@@ -13,7 +15,7 @@ export default function Results(props) {
           <div className="results-sub-container">
             <h4>Totals</h4>
             <p>total questions:</p> <span>{props.score.totalQuestions}</span>
-            <p>total correct answers:</p> <span>{props.score.totalCorrectAnswers}</span>
+            <p>total correct answers:</p> <span>{totalCorrectAnswers}</span>
             <p>percentage of answers correct:</p> <span>{Percentages.total}%</span>
           </div>
           <div className="results-sub-container categories">
