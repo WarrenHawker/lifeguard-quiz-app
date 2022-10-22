@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {questionsData} from '../assets/data';
 import Question from './Question';
 import Pagination from './Pagination';
 import Results from './Results';
+
 
 
 export default function Quiz(props) {
@@ -116,7 +117,7 @@ export default function Quiz(props) {
       questionsSection1: 0,
       questionsSection2: 0,
       questionsSection3: 0,
-      
+
       correctAnswersSection1: 0,
       correctAnswersSection2: 0,
       correctAnswersSection3: 0,
@@ -192,9 +193,9 @@ export default function Quiz(props) {
   return (
     <>
       <section className='questions-container'>      
-        <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        <Pagination showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {questionsDisplay}
-        <Pagination currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
+        <Pagination showCorrectAnswers={showCorrectAnswers} mode={props.options.mode} currentPage={currentPage} totalPages={totalPages} changePage={changePage}/>
         {score==null ?
           <button className='btn btn-primary' onClick={checkAnswers}>Check Answers</button>
         :
