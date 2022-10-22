@@ -79,7 +79,7 @@ export default function Start(props) {
                 </fieldset>
                 <fieldset className="slider-container">
                   <label htmlFor="questionsAmount">How many questions do you want to answer?</label>
-                  <input type="range" min="1" max="10" defaultValue={questionsAmount} onChange={amountSelect}></input>
+                  <input type="range" min="1" max="20" defaultValue={questionsAmount} onChange={amountSelect}></input>
                   <label className="sub-label">{questionsAmount}</label>              
                 </fieldset> 
               </>

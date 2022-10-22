@@ -13,8 +13,8 @@ export default function Timer(props) {
       setMinutes(0)
       setSeconds(0)     
     } else if(props.mode == 'mock') {
-      setMinutes(0)
-      setSeconds(5)
+      setMinutes(65)
+      setSeconds(0)
     }
   },[])
 
@@ -59,7 +59,7 @@ export default function Timer(props) {
   
   return (
     <div className="timer">
-      <h5 ref={timer}>  {minutesDisplay} : {secondsDisplay}</h5>
+      <h3 ref={timer} className={props.showCorrectAnswers&&!timesUp?'green':''}> {minutesDisplay} : {secondsDisplay}</h3>
     </div>
   )
 }

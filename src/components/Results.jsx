@@ -1,4 +1,5 @@
 export default function Results(props) {
+  console.log(props)
   if(props.score) {
     let totalCorrectAnswers = props.score.correctAnswersSection1 + props.score.correctAnswersSection2 + props.score.correctAnswersSection3
     let Percentages = {
@@ -8,10 +9,13 @@ export default function Results(props) {
       section3: (props.score.correctAnswersSection3 / props.score.questionsSection3) * 100,
     }
 
+    let time = document.querySelector('.timer h3').innerHTML
+
     return (
         <div className="results-container">
         <i onClick={props.hideResults} className="fa fa-window-close" id="results-close"></i>
           <h1>Your results</h1>
+          <h4 className="time">{props.score.mode == 'quickfire' ? "Time Spent ": "Time Remaining "}<span>{time}</span></h4>
           <div className="results-sub-container">
             <h4>Totals</h4>
             <p>total questions:</p> <span>{props.score.totalQuestions}</span>

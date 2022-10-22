@@ -1,9 +1,12 @@
+.header-footer {
+	border-bottom: 5px solid var(--color-blue-base);
+	border-top: 5px solid var(--color-blue-base);
+}
+
 .pagination {
 	display: flex;
 	justify-content: space-around;
-	border-bottom: 5px solid var(--color-blue-base);
-	border-top: 5px solid var(--color-blue-base);
-	padding: 1em;
+	padding: 0 0 1em 0;
 	text-align: center;
 }
 

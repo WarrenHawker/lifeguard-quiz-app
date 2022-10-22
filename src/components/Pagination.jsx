@@ -2,19 +2,22 @@ import Timer from './Timer';
 
 export default function Pagination(props) {
   let prevStyle = {
-    visibility: 'visible'
+    visibility: 'visible',
+    display: 'block'
   }
   let nextStyle = {
-    visibility: 'visible'
+    visibility: 'visible',
+    display: 'block'
   }
   let numStyle = {
-    visibility: 'visible'
+    visibility: 'visible',
+    display: 'block'
   }
 
   if(props.totalPages == 1) {
-    prevStyle.visibility = 'hidden'
-    nextStyle.visibility = 'hidden'
-    numStyle.visibility = 'hidden'
+    prevStyle.display = 'none'
+    nextStyle.display = 'none'
+    numStyle.display = 'none'
   } else if(props.currentPage == 1) {
     prevStyle.visibility = 'hidden'
     nextStyle.visibility = 'visible'
@@ -23,11 +26,13 @@ export default function Pagination(props) {
     nextStyle.visibility = 'hidden'
   }
   return (
+    <div className='header-footer'>
+      <Timer showCorrectAnswers={props.showCorrectAnswers} mode={props.mode}/> 
     <div className="pagination">  
-      <Timer showCorrectAnswers={props.showCorrectAnswers} mode={props.mode}/>  
       <button id="btn-prev" onClick={props.changePage} style={prevStyle} className="btn btn-secondary">Prev page</button>    
       <h3 style={numStyle}>Page {props.currentPage} of {props.totalPages}</h3>
       <button id="btn-next" onClick={props.changePage} style={nextStyle} className="btn btn-secondary">Next page</button>
     </div> 
+    </div>
   )
 }

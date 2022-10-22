@@ -96,3 +96,14 @@
 .results-sub-container h4 {
 	grid-column: 1/-1;
 }
+
+.results-container .time {
+	border-bottom: 2px solid black;
+	padding: 1em 0;
+	width: 75%;
+	margin: auto;
+}
+
+.results-container .time span {
+	margin-left: 1em;
+}

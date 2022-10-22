@@ -31,3 +31,7 @@
 .black {
 	color: #000000;
 }
+
+.green {
+	color: var(--color-green);
+}
