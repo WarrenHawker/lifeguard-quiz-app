@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-export default function Start(props) {
+export default function Start() {
+  const form = useRef(null)
 
   const [options, setOptions] = useState({
     mode: null,
@@ -10,8 +11,14 @@ export default function Start(props) {
     paper: null,
   })
 
-  let newOptions
+  useEffect(() => {
+    if(options.mode != null) {
+      form.current.scrollIntoView({behavior: "smooth", block: "start"})
+    }
+  },[options])
+
   const modeSelect = (e) => {
+    let newOptions
     if(e.target.value == 'quickfire') {
       newOptions = {
         mode: 'quickfire',
@@ -57,7 +64,7 @@ export default function Start(props) {
         </header>
         
       <section>
-        <form>
+        <form ref={form}>
           <fieldset>
             <label htmlFor="mode">Select Quiz Mode</label>
             <select name="mode" onChange={modeSelect}>
